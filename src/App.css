@@ -1,0 +1,117 @@
+.page-root {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: #e8f5e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-header {
+  font-size: 48px;
+  margin-top: 28px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+  padding: 10px 40px;
+}
+
+.card {
+  width: 640px;
+  max-width: calc(100% - 48px);
+  margin: 28px auto 12px;
+  padding: 20px 28px 36px;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  border-right: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 18px;
+  color: #cfe9c8;
+  margin: 6px 0 12px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.text-input {
+  width: 220px;
+  padding: 6px 8px;
+  background: transparent;
+  border: 1px solid rgba(200,230,200,0.25);
+  color: #dff0d8;
+  outline: none;
+  font-size: 14px;
+}
+
+.text-input::placeholder {
+  color: rgba(200,230,200,0.6);
+  font-size: 13px;
+}
+
+.submit-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  background: rgba(255,255,255,0.06);
+  color: #dbeedd;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+}
+
+.details {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 12px;
+  text-align: center;
+}
+
+.details h3 {
+  margin: 6px 0 10px;
+  font-size: 16px;
+  color: #e8f5e9;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 360px;
+  margin: 6px auto;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 8px 0;
+}
+
+.label {
+  color: #cfe9c8;
+  flex: 0 0 80px;
+  text-align: left;
+}
+
+.value {
+  color: #fff;
+  text-align: left;
+  flex: 1 1 auto;
+}
+
+.page-footer {
+  width: 640px;
+  max-width: calc(100% - 48px);
+  margin: 18px auto 48px;
+  text-align: center;
+  color: #cfcfcf;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .page-header { font-size: 36px; }
+  .detail-row { max-width: 100%; padding: 6px 0; }
+}
